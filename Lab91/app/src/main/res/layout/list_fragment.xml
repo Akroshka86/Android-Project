@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="6dp">
+
+        <ImageView
+            android:id="@+id/avatar_ad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+
+        <!-- ФИО блок -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fcs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:paddingStart="0dp"
+                android:paddingEnd="5dp"
+                android:text="ФИО:"/>
+            <TextView
+                android:id="@+id/title_ad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:paddingStart="0dp"
+                android:paddingEnd="5dp"/>
+            <TextView
+                android:id="@+id/first_ad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:paddingStart="0dp"
+                android:paddingEnd="5dp"/>
+            <TextView
+                android:id="@+id/last_ad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:paddingStart="0dp"
+                android:paddingEnd="5dp"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/city">
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:paddingStart="0dp"
+                android:paddingEnd="5dp"
+                android:text="Город:"/>
+
+            <TextView
+                android:id="@+id/city_ad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:paddingStart="0dp"
+                android:paddingEnd="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/state_i">
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:paddingStart="0dp"
+                android:paddingEnd="5dp"
+                android:text="Штат:"/>
+
+            <TextView
+                android:id="@+id/state_ad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:paddingStart="0dp"
+                android:paddingEnd="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/country">
+
+            <TextView
+                android:id="@+id/country_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:paddingStart="0dp"
+                android:paddingEnd="5dp"
+                android:text="Страна:"/>
+
+            <TextView
+                android:id="@+id/country_ad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:paddingStart="0dp"
+                android:paddingEnd="5dp"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/street">
+
+            <TextView
+                android:id="@+id/st_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:paddingStart="0dp"
+                android:paddingEnd="5dp"
+                android:text="Улица:"/>
+
+            <TextView
+                android:id="@+id/number_st_ad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:paddingStart="0dp"
+                android:paddingEnd="5dp"/>
+            <TextView
+                android:id="@+id/name_st_ad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:paddingStart="0dp"
+                android:paddingEnd="5dp"/>
+        </LinearLayout>
+
+        <!-- Номер телефона блок -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:gravity="center_vertical"
+                android:paddingStart="0dp"
+                android:paddingEnd="5dp"
+                android:text="Телефон:"/>
+
+            <TextView
+                android:id="@+id/phone_ad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:paddingStart="0dp"
+                android:paddingEnd="5dp"/>
+         </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
